@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Spider Web ML Demo</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+<h1>Spider Web Analyzer</h1>
+
+<form method="POST" enctype="multipart/form-data">
+<input type="file" name="image" required>
+<br><br>
+<button type="submit">Analyze Image</button>
+</form>
+
+{% if prediction %}
+<h2>Prediction: {{ prediction }}</h2>
+{% endif %}
+</div>
+
+</body>
+</html>
